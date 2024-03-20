@@ -41,7 +41,7 @@ function App() {
             }
           ></Route>
           <Route path="/product" element={<Product></Product>}>
-            <Route path=":porductId" element={<Product></Product>}></Route>
+            <Route path=":productId" element={<Product></Product>}></Route>
           </Route>
           <Route path="/cart" element={<Cart></Cart>}></Route>
           <Route path="/login" element={<LoginSignup></LoginSignup>}></Route>
