@@ -5,7 +5,7 @@ import star_dull_icon from "../Assests/star_dull_icon.png";
 import { ShopContext } from "../../Contexts/ShopContext";
 const ProductDisplay = (props) => {
   const { product } = props;
-  const {addToCart}=useContext(ShopContext);
+  const { addToCart } = useContext(ShopContext);
   return (
     <div className="productdisplay">
       <div className="productdisplay-left">
@@ -38,7 +38,10 @@ const ProductDisplay = (props) => {
             ${product.new_price}
           </div>
         </div>
-        <div className="productdisplay-right-discription"></div>
+        <div className="productdisplay-right-discription">
+          A lightweight,usually knitted,pullover shirt,close-fitting ans with
+          round neckline and shot sleeves,worn as an undershirt or outer garment.
+        </div>
         <div className="productdisplay-right-size">
           <h1>Select Size</h1>
 
@@ -51,7 +54,13 @@ const ProductDisplay = (props) => {
           </div>
         </div>
 
-        <button onClick={()=>{addToCart(product.id)}}>ADD TO CART</button>
+        <button
+          onClick={() => {
+            addToCart(product.id);
+          }}
+        >
+          ADD TO CART
+        </button>
         <p className="productdisplay-right-category">
           <span>Category :</span> Women, T-Shirt, Crop Top
         </p>
