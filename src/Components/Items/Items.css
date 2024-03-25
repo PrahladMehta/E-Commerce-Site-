@@ -1,8 +1,10 @@
 .items {
-  width: 250px;
-  object-fit: cover;
+  width: 260px;
 }
 
+.items img {
+  width: 260px;
+}
 .items p {
   margin: 6px 0px;
 }
@@ -28,4 +30,53 @@
 .items:hover {
   transform: scale(1.05);
   transition: 0.6s;
+}
+
+@media (max-width: 1280px) {
+  .items {
+    width: 220px;
+    font-size: 14px;
+  }
+
+  .items img {
+    width: 220px;
+  }
+  .item-price-old {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .items {
+    width: 170px;
+    font-size: 13px;
+  }
+  .items img {
+    width: 170px;
+  }
+  .item-price-old {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 800px) {
+  .items {
+    width: 100px;
+    font-size: 12px;
+  }
+  .items img {
+    width: 100px;
+  }
+  .item-price-old {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .items {
+    width: 160px;
+  }
+  .items img {
+    width: 160px;
+  }
 }

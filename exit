@@ -1,0 +1,23 @@
+[33mcommit eda6eda598639aff3e2b82c174ea92408b0a0d4c[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: PrahladMehta <pankajmehta4561@gmail.com>
+Date:   Wed Mar 20 10:58:33 2024 +0530
+
+    added product display page and breadcrum
+
+[33mcommit 9bb58c72171fc6f5bba6591b908cace722bc6167[m
+Author: PrahladMehta <pankajmehta4561@gmail.com>
+Date:   Mon Mar 18 15:37:56 2024 +0530
+
+    create a footer component ,newsletter component, context for product state managment
+
+[33mcommit fadc58c0f2953087de65ebae91df64ce2943d678[m
+Author: PrahladMehta <pankajmehta4561@gmail.com>
+Date:   Sun Mar 17 13:27:07 2024 +0530
+
+    create shop page
+
+[33mcommit f70d897b797239f9fc8dd65bd21d2efa3c3aef10[m
+Author: PrahladMehta <pankajmehta4561@gmail.com>
+Date:   Wed Mar 13 10:36:57 2024 +0530
+
+    Initialize project using Create React App

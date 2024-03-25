@@ -3,10 +3,6 @@ import new_collection from "../Assests/new_collections";
 import Items from "../Items/Items";
 import "./NewCollection.css";
 const NewCollection = () => {
-   console.log("NEW COLLECTION");
-  console.log(new_collection);
-
-
   return (
     <div>
       <div className="new-collection">
@@ -15,16 +11,14 @@ const NewCollection = () => {
         <div className="collection">
           {new_collection.map((items, i) => {
             return (
-              
               <Items
-               key={i}
+                key={i}
                 name={items.name}
                 image={items.image}
                 old_price={items.old_price}
                 new_price={items.new_price}
                 id={items.id}
-              >
-              </Items>
+              ></Items>
             );
           })}
         </div>

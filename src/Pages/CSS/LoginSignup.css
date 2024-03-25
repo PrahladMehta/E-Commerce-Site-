@@ -11,7 +11,7 @@
   margin: auto;
   margin-bottom: 10px;
 
-  padding: 40px 60px;
+  padding: 30px 50px;
 }
 
 .loginsignup-container h1 {
@@ -70,3 +70,38 @@
   font-size: 18px;
   font-weight: 500;
 }
+
+@media (max-width: 1280px) {
+  .loginsignup {
+    padding-top: px;
+  }
+
+  .loginsignup-container {
+    width: auto;
+    max-width: 500px;
+    max-height: 500px;
+  }
+
+  .loginsignup-fields {
+    gap: 15px;
+    margin-top: 20px;
+  }
+  .loginsignup-fields input {
+    height: 50px;
+    width: 93%;
+  }
+
+  .loginsignup-container button {
+    width: 100%;
+  }
+
+  .loginsignup-login {
+    font-size: 16px;
+  }
+
+  .loginsignup-agree {
+    font-size: 14px;
+    gap: 10px;
+  }
+}
+
