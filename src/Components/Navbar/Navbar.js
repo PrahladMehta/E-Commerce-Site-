@@ -82,10 +82,21 @@ export default function Navbar() {
       </ul>
 
       <div className="nav-login-cart">
-        <Link to="/login" style={{ textDecoration: "none" }}>
-          {" "}
-          <button>Login</button>
-        </Link>
+        {localStorage.getItem("auth-token") ? (
+          <button
+            onClick={() => {
+              localStorage.removeItem("auth-token");
+              window.location.replace("/");
+            }}
+          >
+            Log out
+          </button>
+        ) : (
+          <Link to="/login" style={{ textDecoration: "none" }}>
+            <button>Log in</button>
+          </Link>
+        )}
+
         <Link to="/cart" style={{ textDecoration: "none" }}>
           <img src={cart_icon} alt="" />
         </Link>
